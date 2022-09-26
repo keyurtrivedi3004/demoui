@@ -1,5 +1,6 @@
 import {
   Avatar,
+  Button,
   Divider,
   Flex,
   Heading,
@@ -14,16 +15,16 @@ import { FaBookmark, FaClone, FaComment } from "react-icons/fa";
 const Card = () => {
   return (
     <>
-      <Flex justify="center" align="center">
-        <Stack w="850px" boxShadow="md">
-          <Stack m={8} p={4}>
+      <Flex justify="center">
+        <Stack w="800px" boxShadow="lg">
+          <Stack spacing={8} m={10} p={4}>
             <Text>@kannewilliamson</Text>
             <HStack>
               <Avatar name="John Deo" size="lg" />
-              <Text fontWeight="600">Kanne Williamso</Text>
               <Text fontWeight="600">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Ratione, quia?
+                Kanne Williamso
+                <Text fontWeight="600">adipisicing elit. Ratione, quia?</Text>
+                <Text>13/12/201 at 02:30 pm</Text>
               </Text>
             </HStack>
             <VStack align="flex-start">
@@ -40,11 +41,11 @@ const Card = () => {
               </Text>
               <Divider colorScheme={"green"} orientation="horizontal" />
             </VStack>
-            <Flex justifyContent={"space-evenly"}>
-              <FaBookmark /> <Text>Bookmark</Text>
-              <FaClone /> <Text>Copy URL</Text>
-              <FaComment /> <Text>321</Text>
-            </Flex>
+            <HStack spacing={4}>
+              <Button leftIcon={<FaBookmark />}>Bookmark</Button>
+              <Button leftIcon={<FaClone />}>Copy Url</Button>
+              <Button leftIcon={<FaComment />}>321</Button>
+            </HStack>
           </Stack>
         </Stack>
       </Flex>

@@ -8,11 +8,7 @@ import {
   Box,
   Link,
 } from "@chakra-ui/react";
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaEnvelope,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -25,7 +21,7 @@ export const Footer = () => {
               backgroundColor="transparent"
               objectFit="contain"
               boxSize="50px"
-              w="10"
+              w="20"
               src="/navimage.png"
             />
             <Text color="#64D6BD" fontSize="xx-large">
@@ -37,9 +33,9 @@ export const Footer = () => {
               <Text color="black" fontWeight="bold" fontSize="x-large" mb="5">
                 QUICK LINKS
               </Text>
-              <Text color="black">Patreon</Text>
-              <Text color="black">Community Guidelines</Text>
-              <Text color="black">Terms of Use</Text>
+              <Link>Patreon</Link>
+              <Link>Community Guidelines</Link>
+              <Link>Terms of Use</Link>
             </Flex>
           </Box>
           <Box>

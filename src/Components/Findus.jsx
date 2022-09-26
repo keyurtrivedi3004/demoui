@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Findus = () => {
   return (
-    <Flex justify={"flex-end"} align={"end"}>
+    <Flex pr={170} justify={"flex-end"} align={"end"}>
       <Stack w="200px" boxShadow="md">
         <Stack m={8}>
           <Text fontWeight={"bold"} color={"green.200"}>
