@@ -15,7 +15,7 @@ const Card = () => {
   return (
     <>
       <Flex justify="center" align="center">
-        <Stack w="600px" boxShadow="md">
+        <Stack w="850px" boxShadow="md">
           <Stack m={8} p={4}>
             <Text>@kannewilliamson</Text>
             <HStack>

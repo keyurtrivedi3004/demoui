@@ -7,7 +7,7 @@ const Bord = () => {
       <Container w={"container.xl"} justifyContent={"space-between"}>
         <Flex
           my="8"
-          gap={8}
+          gap={20}
           gridTemplateColumns="repeat(auto-fit,minmax(320px,1fr))"
         >
           <Text fontSize={"5xl"}> Board Activity </Text>
